@@ -1,0 +1,7 @@
+server:
+  port: 8088
+xsrobot:
+  httpapi:
+    host: 127.0.0.1
+    port: 53392
+    secret: xiaoshen
