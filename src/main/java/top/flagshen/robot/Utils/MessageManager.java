@@ -34,6 +34,10 @@ public class MessageManager {
         handlers.put(messageHandler,messageRequest);
     }
 
+    public ConcurrentHashMap<MessageHandler,MessageRequest> getHandlers() {
+        return handlers;
+    }
+
     public void onMessage(MessageRequest messageRequest) throws IOException {
         for (Map.Entry<MessageHandler, MessageRequest> entry : handlers.entrySet()) {
             if (messageRequest.getType().equals(entry.getValue().getType()) || entry.getValue().getType()==null) {

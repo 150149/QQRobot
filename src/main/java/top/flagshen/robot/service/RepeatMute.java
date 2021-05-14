@@ -2,6 +2,7 @@ package top.flagshen.robot.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import top.flagshen.robot.Entity.FiveTextList;
 import top.flagshen.robot.RobotApplication;
 import top.flagshen.robot.Utils.AdminGroup;
 import top.flagshen.robot.Utils.MessageHandler;
@@ -24,7 +25,7 @@ public class RepeatMute implements MessageHandler {
     @Autowired
     private XsRobotTemplate xsRobotTemplate;
 
-    private HashMap<Long, List<String>> words = new HashMap<>();
+    private HashMap<Long, FiveTextList> words = new HashMap<>();
 
     public RepeatMute() {
         MessageRequest messageRequest = new MessageRequest();
@@ -48,22 +49,16 @@ public class RepeatMute implements MessageHandler {
             }
         }
 
-
-        words.putIfAbsent(messageRequest.getSender().getId(),new ArrayList<>());
-        List<String> theWords =  words.get(messageRequest.getSender().getId());
+        words.putIfAbsent(messageRequest.getSender().getId(),new FiveTextList());
+        FiveTextList theWords =  words.get(messageRequest.getSender().getId());
         theWords.add(messageRequest.getMessage().getText());
-        if (theWords.size()>=5) {
-            for (int i=1;i<=4;i++) {
-                if (!theWords.get(theWords.size()-i).equals(theWords.get(theWords.size()-(i+1)))) {
-                    break;
-                }
-                if (i==4) {
-                    xsRobotTemplate.banGroupOne(messageRequest.getBot(),messageRequest.getGroup().getId(),messageRequest.getSender().getId(),60);
-                    String msg = "[@" + messageRequest.getSender().getId() + "] (" + messageRequest.getSender().getId() + ")重复发言5次" +
-                            ",已被禁言1分钟";
-                    MsgReponse resp = xsRobotTemplate.sendGroupMsg(messageRequest.getBot(), messageRequest.getGroup().getId(), msg, false);
-                }
-            }
+        if (theWords.isRepeat()) {
+            xsRobotTemplate.banGroupOne(messageRequest.getBot(),messageRequest.getGroup().getId(),messageRequest.getSender().getId(),60);
+            String msg = "[@" + messageRequest.getSender().getId() + "] (" + messageRequest.getSender().getId() + ")重复发言5次" +
+                    ",已被禁言1分钟";
+            MsgReponse resp = xsRobotTemplate.sendGroupMsg(messageRequest.getBot(), messageRequest.getGroup().getId(), msg, false);
         }
+        words.put(messageRequest.getSender().getId(),theWords);
+
     }
 }

@@ -59,7 +59,7 @@ public class BadMessageCheck implements MessageHandler {
         for (BadMessage b:badMsgList) {
             String s = b.getBadmsg().toLowerCase();
             if (messageRequest.getMessage().getText().toLowerCase().contains(s) && !messageRequest.getMessage().getText().contains("[")) {
-                System.out.println("发现脏话：" + s);
+                System.out.println("[信息]发现脏话：" + s);
                 HttpUtil.deleteGroupMessage(messageRequest.getBot(),messageRequest.getGroup().getId(),messageRequest.getMessage().getId(),messageRequest.getMessage().getFlag());
             }
         }

@@ -18,6 +18,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -26,6 +29,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1s0pox7ucHNBDUZJ7kgJU8rWdsc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="D:/Java/SDK" />
@@ -78,11 +82,31 @@
       <workItem from="1620220755449" duration="3011000" />
       <workItem from="1620262681684" duration="5712000" />
       <workItem from="1620393961439" duration="4193000" />
-      <workItem from="1620459737127" duration="6370000" />
+      <workItem from="1620459737127" duration="7873000" />
+      <workItem from="1620531664482" duration="489000" />
+      <workItem from="1620557341214" duration="1278000" />
+      <workItem from="1620607693224" duration="3756000" />
+      <workItem from="1620747528596" duration="615000" />
+      <workItem from="1620795789237" duration="2649000" />
+      <workItem from="1620882163642" duration="2667000" />
+      <workItem from="1620987039442" duration="438000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * @author 150149
  */
-@Service
+//@Service
 public class SearchQQBind implements MessageHandler {
 
     @Autowired
@@ -49,27 +49,37 @@ public class SearchQQBind implements MessageHandler {
         SimpleDateFormat slf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
         String search = messageRequest.getMessage().getText().replaceAll(" ","");
-        search = search.replaceAll("查Q","");
+        search = search.replaceAll("查Q","").replaceAll("查q","");
+
+        if ("".equals(search)) {
+            MsgReponse resp = xsRobotTemplate.sendGroupMsg(messageRequest.getBot(), messageRequest.getGroup().getId(), "查Q用法: 查Q [Q号|手机号]", false);
+            return;
+        }
+
+
 
         System.out.println("Q绑开始查询: " + search);
-        List<QBind> qBinds = qBindMapper.search( "%" + search + "%");
+        List<QBind> qBinds = qBindMapper.search( search);
         if (qBinds.size()>0) {
             StringBuilder sb = new StringBuilder();
-            sb.append("--------------------\n搜索内容: ");
+            sb.append("-------------------------\n搜索内容: ");
             sb.append(search);
             sb.append("\n");
             for (QBind qBind: qBinds) {
+                if (qBind.getString().contains("----")) {
+                    qBind.setString(qBind.getString().replaceAll(search,"").split("----")[0] );
+                }
                 sb.append("搜索结果: ");
                 sb.append(qBind.getString());
                 sb.append("\n");
             }
-            sb.append("--------------------");
+            sb.append("-------------------------");
             MsgReponse resp = xsRobotTemplate.sendGroupMsg(messageRequest.getBot(), messageRequest.getGroup().getId(), sb.toString(), false);
         } else {
-            String msg = "--------------------\n搜索内容: " + search + "\n搜索结果: " + "找不到该记录" + "\n--------------------" ;
+            String msg = "-------------------------\n搜索内容: " + search + "\n搜索结果: " + "找不到该记录" + "\n-------------------------" ;
             MsgReponse resp = xsRobotTemplate.sendGroupMsg(messageRequest.getBot(), messageRequest.getGroup().getId(), msg, false);
         }
 
-        System.out.println("Q绑查询完成: " + search);
+        System.out.println("[信息]Q绑查询完成: " + search);
     }
 }
