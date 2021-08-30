@@ -5,20 +5,30 @@ package top.flagshen.robot.pojo;
  */
 public class QBind {
 
-    private String string;
-
-    public QBind(String string) {
-        this.string = string;
-    }
+    private String k;
+    private String v;
 
     public QBind() {
     }
 
-    public String getString() {
-        return string;
+    public QBind(String k, String v) {
+        this.k = k;
+        this.v = v;
     }
 
-    public void setString(String string) {
-        this.string = string;
+    public String getK() {
+        return k;
+    }
+
+    public void setK(String k) {
+        this.k = k;
+    }
+
+    public String getV() {
+        return v;
+    }
+
+    public void setV(String v) {
+        this.v = v;
     }
 }

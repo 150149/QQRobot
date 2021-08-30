@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="top.flagshen.robot.mapper.QBindMapper">
-    <select id="search" resultType="QBind">
-        SELECT * FROM 16eQ WHERE MATCH(`string`) AGAINST(#{str});
+    <select id="search1" resultType="QBind">
+        SELECT * FROM 16eq1 WHERE k like #{str};
+    </select>
+
+    <select id="search2" resultType="QBind">
+        SELECT * FROM 16eq2 WHERE k like #{str};
     </select>
 </mapper>

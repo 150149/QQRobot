@@ -8,9 +8,11 @@ import top.flagshen.robot.Utils.HttpUtil;
 import top.flagshen.robot.Utils.MessageHandler;
 import top.flagshen.xsrobot.entity.request.Message;
 import top.flagshen.xsrobot.entity.request.MessageRequest;
+import top.flagshen.xsrobot.entity.response.MsgReponse;
 import top.flagshen.xsrobot.template.XsRobotTemplate;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 /**
@@ -34,6 +36,13 @@ public class LongTextCheck implements MessageHandler {
     public void handleMessage(MessageRequest messageRequest) throws IOException {
         if (!AdminGroup.isAdminGroup(messageRequest.getGroup().getId())) {
             return;
+        }
+
+        MsgReponse<ArrayList<Long>> admins = xsRobotTemplate.getGroupAdmins(messageRequest.getBot(),messageRequest.getGroup().getId());
+        for (long l:admins.getData()) {
+            if (messageRequest.getSender().getId()==l) {
+                return;
+            }
         }
 
         if (messageRequest.getMessage().getText().length()>500 && !messageRequest.getMessage().getText().contains("<?xml")) {

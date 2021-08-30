@@ -39,7 +39,7 @@ public class MODList implements MessageHandler {
             return;
         }
 
-        String msg = "[pic,hash=168B5FAC636E07676F1609C844DA3E22]\n\nMOD资源站：\n\nhttp://121.37.239.127:25564/kodexplorer/index.php?share/folder&user=100&sid=zaSvTjHs\n";
+        String msg = "[pic,hash=168B5FAC636E07676F1609C844DA3E22]\n\nMOD资源站：\n\nhttp://121.37.239.127:25564/index.php?share/folder&user=100&sid=XPTWIr3H\n";
         MsgReponse resp = xsRobotTemplate.sendGroupMsg(messageRequest.getBot(), messageRequest.getGroup().getId(), msg, false);
     }
 }

@@ -31,10 +31,8 @@ public class TestMessage implements MessageHandler {
     public TestMessage() {
         MessageRequest messageRequest = new MessageRequest();
         Message message = new Message();
-        message.setText("测试");
         messageRequest.setType("message");
         messageRequest.setSubtype("group");
-        messageRequest.setMessage(message);
         RobotApplication.messageManager.registerMessageHandler(this,messageRequest);
         System.out.println("[信息]测试消息模块已启动");
     }
@@ -45,9 +43,14 @@ public class TestMessage implements MessageHandler {
             return;
         }
 
+        if (!"测试".equals(messageRequest.getMessage().getText())) {
+            return;
+        }
+
         SimpleDateFormat slf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String msg;
         msg = "┏测试消息发送者: [@" + messageRequest.getSender().getId() + "] (" + messageRequest.getSender().getId() +")\n" +
+                "┣群名片: " + messageRequest.getSender().getName().toLowerCase()  + "\n" +
                 "┣来源群: " + messageRequest.getGroup().getName() + "(" + messageRequest.getGroup().getId() + ")\n" +
                 "┣机器人: " + messageRequest.getBot() + "\n" +
                 "┣收到的信息: " + messageRequest.getMessage().getText() + "\n" +

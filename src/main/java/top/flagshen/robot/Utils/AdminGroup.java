@@ -12,7 +12,7 @@ public class AdminGroup {
 
     static {
         groups.add((long) 428757595);
-        //groups.add((long) 1054842957);
+        groups.add((long) 1054842957);
     }
 
     public static boolean isAdminGroup(Long s) {

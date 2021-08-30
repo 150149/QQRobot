@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b4916a9-d80c-42fe-a329-d6f23eb2daa2" name="Default Changelist" comment="" />
+    <list default="true" id="3b4916a9-d80c-42fe-a329-d6f23eb2daa2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/Utils/AdminGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/Utils/AdminGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/mapper/QBindMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/mapper/QBindMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/pojo/QBind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/pojo/QBind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/BadMessageCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/BadMessageCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/LongTextCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/LongTextCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/AutoReply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/RepeatMute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/RepeatMute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/SearchQQBind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/SearchQQBind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/SpecialWord/MODList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/SpecialWord/MODList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/TestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/TestMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/QBindMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/QBindMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/QBindMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/QBindMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/Utils/AdminGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/Utils/AdminGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/mapper/QBindMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/mapper/QBindMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/pojo/QBind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/pojo/QBind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/BadMessageCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/BadMessageCheck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/LongTextCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/LongTextCheck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/RepeatMute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/RepeatMute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/SearchQQBind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/SearchQQBind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/SpecialWord/MODList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/SpecialWord/MODList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/TestMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/TestMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-top.flagshen.robot.RobotTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-top.flagshen.robot.RobotTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/top.flagshen.robot.RobotTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/top.flagshen.robot.RobotTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xsrobot-spring-boot-starter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/xsrobot-spring-boot-starter-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xsrobot-spring-boot-starter-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/xsrobot-spring-boot-starter-1.0-SNAPSHOT.jar.original" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +71,10 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.flagshen.robot.service" />
+      <recent name="top.flagshen.robot.mapper" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\visual studio\项目储存\小栗子机器人插件\src\main\resources\mapper" />
     </key>
@@ -90,6 +124,34 @@
       <workItem from="1620795789237" duration="2649000" />
       <workItem from="1620882163642" duration="2667000" />
       <workItem from="1620987039442" duration="438000" />
+      <workItem from="1621159504074" duration="828000" />
+      <workItem from="1621209666062" duration="753000" />
+      <workItem from="1622963473318" duration="701000" />
+      <workItem from="1623159284787" duration="949000" />
+      <workItem from="1623160325851" duration="2147000" />
+      <workItem from="1623286311466" duration="27000" />
+      <workItem from="1623755748697" duration="1091000" />
+      <workItem from="1623842706698" duration="3457000" />
+      <workItem from="1623899987553" duration="3503000" />
+      <workItem from="1623905583576" duration="4206000" />
+      <workItem from="1623981694305" duration="2455000" />
+      <workItem from="1624078575921" duration="20000" />
+      <workItem from="1624963866484" duration="7015000" />
+      <workItem from="1624970898745" duration="9373000" />
+      <workItem from="1625024372396" duration="21558000" />
+      <workItem from="1625107051432" duration="18375000" />
+      <workItem from="1625216862469" duration="4501000" />
+      <workItem from="1625240008949" duration="1726000" />
+      <workItem from="1625291509120" duration="2720000" />
+      <workItem from="1625376481814" duration="56000" />
+      <workItem from="1625461375295" duration="18000" />
+      <workItem from="1625473804316" duration="2269000" />
+      <workItem from="1629872165963" duration="4526000" />
+      <workItem from="1629880350484" duration="32000" />
+      <workItem from="1629887162415" duration="1341000" />
+      <workItem from="1629900946794" duration="223000" />
+      <workItem from="1630157971614" duration="2394000" />
+      <workItem from="1630331276729" duration="1167000" />
     </task>
     <servers />
   </component>

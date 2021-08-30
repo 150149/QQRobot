@@ -1,0 +1,27 @@
+领地(创建与删除)
+/res create [领地名]		创建一个领地
+/res remove [领地名]		移除一个领地
+/res removeall		移除所有领地
+/res confirm		确定移除领地(输完移除指令后输这个)
+领地(其他命令)
+/res 
+/res tp [领地名]	传送至某领地
+/res tpset		将领地传送点设为你站的地方
+/res mirror [源领地名] [目标领地名]		复制源领地的权限设置至目标领地
+/res message [领地名] [enter/leave] [信息]		设置进入/退出某领地时候的信息
+/res message [领地名] remove [enter/leave]	移除进入/退出某领地时候的信息
+领地(权限)
+/res pset [名字] [权限名] [true/remove]	给予/撤除此人该领地权限
+/res pset [名字] trusted true		给予此人全部领地权限
+/res pset [名字] trusted remove		撤除此人全部领地权限
+/res set [权限名] [true/false]	开启/关闭该领地的默认权限
+其他权限
+bucket：设置是否能使用桶	ignite：点火的权限	piston：活塞是否能使用	
+build：建造权限		destroy：毁坏权限	place：放置权限
+flow：液体流动		waterflow：水流动	lavaflow：岩浆流动
+container：是否能使用容器	use：使用权限(工作台，炉子等)
+subzone：是否能设置子空间	healing：设置是否能恢复生命
+tnt：tnt是否有效		firespread：火是否能蔓延
+pvp：设置是否能pvp		damage：是否能造成伤害
+monsters：是否刷新怪物	animals：是否刷新动物
+move：移动权限		tp：传送权限	

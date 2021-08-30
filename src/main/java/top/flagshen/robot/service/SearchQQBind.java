@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * @author 150149
  */
-//@Service
+@Service
 public class SearchQQBind implements MessageHandler {
 
     @Autowired
@@ -59,18 +59,16 @@ public class SearchQQBind implements MessageHandler {
 
 
         System.out.println("Q绑开始查询: " + search);
-        List<QBind> qBinds = qBindMapper.search( search);
+        List<QBind> qBinds = qBindMapper.search1( search);
+        qBinds.addAll(qBindMapper.search2(search));
         if (qBinds.size()>0) {
             StringBuilder sb = new StringBuilder();
             sb.append("-------------------------\n搜索内容: ");
             sb.append(search);
             sb.append("\n");
             for (QBind qBind: qBinds) {
-                if (qBind.getString().contains("----")) {
-                    qBind.setString(qBind.getString().replaceAll(search,"").split("----")[0] );
-                }
                 sb.append("搜索结果: ");
-                sb.append(qBind.getString());
+                sb.append(qBind.getV());
                 sb.append("\n");
             }
             sb.append("-------------------------");

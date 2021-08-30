@@ -13,6 +13,8 @@ import java.util.List;
 @Repository
 public interface QBindMapper {
 
-    List<QBind> search(String str);
+    List<QBind> search1(String str);
+
+    List<QBind> search2(String str);
 
 }

@@ -53,9 +53,9 @@ public class RepeatMute implements MessageHandler {
         FiveTextList theWords =  words.get(messageRequest.getSender().getId());
         theWords.add(messageRequest.getMessage().getText());
         if (theWords.isRepeat()) {
-            xsRobotTemplate.banGroupOne(messageRequest.getBot(),messageRequest.getGroup().getId(),messageRequest.getSender().getId(),60);
+            xsRobotTemplate.banGroupOne(messageRequest.getBot(),messageRequest.getGroup().getId(),messageRequest.getSender().getId(),60*10);
             String msg = "[@" + messageRequest.getSender().getId() + "] (" + messageRequest.getSender().getId() + ")重复发言5次" +
-                    ",已被禁言1分钟";
+                    ",已被禁言10分钟";
             MsgReponse resp = xsRobotTemplate.sendGroupMsg(messageRequest.getBot(), messageRequest.getGroup().getId(), msg, false);
         }
         words.put(messageRequest.getSender().getId(),theWords);
