@@ -3,30 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3b4916a9-d80c-42fe-a329-d6f23eb2daa2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/Utils/AdminGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/Utils/AdminGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/mapper/QBindMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/mapper/QBindMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/pojo/QBind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/pojo/QBind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/BadMessageCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/BadMessageCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/LongTextCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/LongTextCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/AutoReply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/RepeatMute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/RepeatMute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/SearchQQBind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/SearchQQBind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/SpecialWord/MODList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/SpecialWord/MODList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/TestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/TestMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/QBindMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/QBindMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/QBindMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/QBindMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/Utils/AdminGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/Utils/AdminGroup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/mapper/QBindMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/mapper/QBindMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/pojo/QBind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/pojo/QBind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/BadMessageCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/BadMessageCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/LongTextCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/LongTextCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/RepeatMute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/RepeatMute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/SearchQQBind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/SearchQQBind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/SpecialWord/MODList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/SpecialWord/MODList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/TestMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/TestMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/ADMessageCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/flagshen/robot/service/ADMessageCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/Utils/BadMsgUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/Utils/BadMsgUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/ADMessageCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/flagshen/robot/service/ADMessageCheck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-top.flagshen.robot.RobotTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-top.flagshen.robot.RobotTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/top.flagshen.robot.RobotTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/top.flagshen.robot.RobotTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xsrobot-spring-boot-starter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/xsrobot-spring-boot-starter-1.0-SNAPSHOT.jar" afterDir="false" />
@@ -152,6 +131,8 @@
       <workItem from="1629900946794" duration="223000" />
       <workItem from="1630157971614" duration="2394000" />
       <workItem from="1630331276729" duration="1167000" />
+      <workItem from="1630338554625" duration="1305000" />
+      <workItem from="1630454135631" duration="13000" />
     </task>
     <servers />
   </component>

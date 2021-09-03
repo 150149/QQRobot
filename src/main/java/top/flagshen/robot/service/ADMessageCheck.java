@@ -62,7 +62,7 @@ public class ADMessageCheck implements MessageHandler {
 
         String msg = messageRequest.getMessage().getText();
         for (String s: keywords ) {
-            if (msg.contains(s)) {
+            if (msg.contains(s) && msg.length()>20) {
                 String rep = "发现广告词【" + s + "】已将 " + messageRequest.getSender().getName() + "(" + messageRequest.getSender().getId() + ") 踢出";
                 MsgReponse resp = xsRobotTemplate.sendGroupMsg(messageRequest.getBot(), messageRequest.getGroup().getId(), rep, false);
                 HttpUtil.deleteGroupMessage(messageRequest.getBot(),messageRequest.getGroup().getId(),messageRequest.getMessage().getId(),messageRequest.getMessage().getFlag());
